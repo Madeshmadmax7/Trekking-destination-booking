@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        body{
+            background-image: linear-gradient(hsla(179, 100%, 52%, 0.315),hsla(180, 59%, 47%, 0.365)),url(img1.jpg);
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+            padding-top: 20px;
+        }
+        .login{
+            width: 300px; 
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        }
+        .btn{
+            text-align: center;
+        }
+        .sub{
+            border-radius: 5px;
+            border-color: transparent;
+            padding: 10px 20px;
+        }
+        .un, .pass {
+            padding: 10px 30px 10px 40px;
+            border-radius: 5px;
+            border-color: transparent;
+            width: 100%; 
+            box-sizing: border-box; 
+            margin-bottom: 10px;
+        }
+        .un {
+            background-image: url('user-icon.png');
+            background-repeat: no-repeat;
+            background-position: 10px center; 
+            padding-left: 40px;
+        }
+        .pass {
+            background-image: url('lock-icon.png');
+            background-repeat: no-repeat;
+            background-position: 10px center; 
+            padding-left: 40px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <h1>Login</h1>
+        <form>
+            <div class="login">
+                <input type="text" placeholder="User Name" class="un" id="user" name="username">
+                <br>
+                <input type="password" placeholder="Password" class="pass" id="pass" name="password">
+                <br>
+                <div class="btn">
+                    <button type="submit" class="sub">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

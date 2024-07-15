@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #999;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #999;
+            border-radius: 50px;
+            width: 50%;
+            position: relative;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar li {
+            float: left;
+            margin-right: 20px;
+            background-color: #999;
+        }
+        .navbar .menuitems{
+            background-color: #999;
+        }
+        .navbar a {
+            text-decoration: none;
+            background-color: #999;
+            color: #000;
+            display: block;
+            padding: 10px 15px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+        .navbar a:hover {
+            background-color: #f0d3d3b6;
+            font-size: larger;
+        }
+        *{
+        padding: 0;
+        margin: 0;
+        position: relative;
+        box-sizing: border-box;
+        background-color: #000;
+        }
+
+        .listing-section, .cart-section {
+        width: 100%;
+        float: left;
+        padding: 1%;
+        border-bottom: 0.01em solid #000;
+        }
+
+        .product {
+        float: left;
+        width: 23%;
+        border-radius: 2%;
+        margin: 1%;
+        }
+
+        .product:hover {
+        box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
+        -webkit-box-shadow: 1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);  
+        -moz-box-shadow:    1.5px 1.5px 2.5px 3px rgba(0, 0, 0, 0.4);
+        }
+
+        .image-box {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 2% 2% 0 0;
+        }
+
+        .images {
+        height: 15em;
+        background-size: cover; 
+        background-position: center center; 
+        background-repeat: no-repeat;
+        border-radius: 2% 2% 0 0;
+        transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        }
+
+        .images:hover{
+        transform: scale(1.1);
+        overflow: hidden;
+        border-radius: 2%;
+        opacity: 30%;
+        }
+
+        #image-1 {background-image: url("i1.jpg");}
+
+        #image-2 {background-image: url("i2.jpg")}
+
+        #image-3 {background-image: url("i3.jpg")}
+
+        #image-4 {background-image: url("i5.jpg")}
+
+        #image-5 {background-image: url("i6.jpg")}
+
+        #image-6 {background-image: url("i7.jpg")}
+
+        #image-7 {background-image: url("i8.jpg")}
+
+        #image-8 {background-image: url("i10.jpg")}
+
+        .text-box {
+        width: 100%;
+        float: left;
+        border: 0.00001em transparent #000;
+        border-radius: 0 0 2% 2%;
+        padding: 1em;
+        background-color: #999;
+        }
+
+        h2, h3 {
+        background-color: #999;
+        color: white;
+        float: left;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+        text-transform: uppercase;
+        margin: 0.2em auto;
+        }
+        .item{
+        clear: left;
+        width: 100%;
+        text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="menuitems">
+            <li><a href="Mainpage.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="about2.html">About Us</a></li>
+        </ul>
+    </div>
+    <div class="listing-section">
+        <div class="product">
+            <a href="kollukumalai.html">
+                <div class="image-box">
+                    <div class="images" id="image-1"></div>
+                </div>
+                <div class="text-box">
+                    <h2 class="item">Kollukumalai</h2>
+                </div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="everest.html">
+                <div class="image-box">
+                    <div class="images" id="image-2"></div>
+                </div>
+                <div class="text-box">
+                    <h2 class="item">Everest</h2>
+                </div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="munnar.html">
+                <div class="image-box">
+                    <div class="images" id="image-3"></div>
+                </div>
+                <div class="text-box">
+                    <h2 class="item">Munnar</h2>
+                </div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="fuji.html">
+                <div class="image-box">
+                    <div class="images" id="image-4"></div>
+                </div>
+                <div class="text-box">
+                    <h2 class="item">Fuji</h2>
+                </div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="ratanghat.html">
+                <div class="image-box">
+                    <div class="images" id="image-5"></div>
+                </div>
+                <div class="text-box">
+                    <h2 class="item">Ratanghat</h2>
+                </div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="kilimanjaro.html">
+                <div class="image-box">
+                    <div class="images" id="image-6"></div>
+                </div>
+                <div class="text-box">
+                    <h2 class="item">Kilimanjaro</h2>
+                </div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="rakiura.html">
+                <div class="image-box">
+                    <div class="images" id="image-7"></div>
+                </div>
+                <div class="text-box">
+                    <h2 class="item">Rakiura</h2>
+                </div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="Backbone Trail.html">
+                <div class="image-box">
+                    <div class="images" id="image-8"></div>
+                </div>
+                <div class="text-box">
+                    <h2 class="item">Backbone Trail</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

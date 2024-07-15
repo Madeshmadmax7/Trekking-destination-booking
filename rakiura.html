@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap');
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: 'Poppins', sans-serif;
+        background: #000;
+    }
+    
+    .container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 900px;
+        height: 600px;
+        background: #fff;
+        margin: 20px;
+    }
+    
+    .container .imgBx {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        background: #212121;
+        transition: .3s linear;
+    }
+    
+    .container .imgBx:before {
+        position: absolute;
+        top: 0px;
+        left: 24px;
+        color: #000;
+        opacity: 0.2;
+        font-size: 8em;
+        font-weight: 800;
+    }
+    
+    .container .imgBx img {
+        position: relative;
+        width: 400px;
+        left: -40px;
+        transition: .9s linear;
+    }
+    
+    .container .details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 40px;
+    }
+    
+    .container .details h2{
+        margin: 0;
+        padding: 0;
+        font-size: 2.4em;
+        line-height: 1em;
+        color: #444;
+    }
+    .container .details h3{
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+        line-height: 1.5em;
+        color: #999;
+    }
+    .container .details h4{
+        margin: 0;
+        padding: 0;
+        font-size: 1.1em;
+        line-height: 1.2em;
+        color: #444;
+    }
+    .container .details h2 span {
+        font-size: 0.4em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #999;
+    }
+    
+    .container .details p {
+        max-width: 85%;
+        margin-left: 15%;
+        color: #333;
+        font-size: 15px;
+        margin-bottom: 36px;
+    }
+    
+    .container .details h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 2.5em;
+        color: #a2a2a2;
+        float: left;
+    }
+    .container .details button {
+        background: #000;
+        color: #fff;
+        border: none;
+        outline: none;
+        padding: 15px 20px;
+        margin-top: 5px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-radius: 40px;
+        float: right;
+    }
+    
+    .product-colors span {
+        width: 26px;
+        height: 26px;
+        top: 7px;
+        margin-right: 12px;
+        left: 10px;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+    }
+    
+    .black {
+        background: #000;
+    }
+    
+    .red {
+        background: #D5212E;
+    }
+    
+    .orange {
+        background: #F18557;
+    }
+    
+    .product-colors .active:after{
+        content: "";
+        width: 36px;
+        height: 36px;
+        border: 2px solid #000;
+        position: absolute;
+        border-radius: 50%;
+        box-sizing: border-box;
+        left: -5px;
+        top: -5px;
+    }
+    
+    @media (max-width: 1080px) {
+        .container {
+            height: auto;
+        }
+        .container .imgBx {
+            padding: 40px;
+            box-sizing: border-box;
+            width: 100% !important;
+            height: auto;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container .imgBx img {
+            left: initial;
+            max-width: 100%;
+            transform: rotate(0deg);
+        }
+        .details {
+            width: 100% !important;
+            height: auto;
+            padding: 20px;
+        }
+        .container .details p {
+            margin-left: 0;
+            max-width: 100%;
+        }
+    }
+    
+    footer {
+        position: fixed;
+        right: 16px;
+        bottom: 12px;
+    }
+    
+    footer a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Card UI Design</title>
+
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="imgBx">
+        <img src="i8.jpg">
+        </div>
+        <div class="details">
+            <div class="content">
+                <h2>Rakiura<br>
+                    <span>New Zealand</span>
+                </h2>
+                <p>
+                <h4>Stewart Island is New Zealand's third-largest island, located 30 kilometres south of the South Island, across Foveaux Strait. It is a roughly triangular island with a total land area of 1,746 km². Its 164-kilometre coastline is deeply indented by Paterson Inlet, Port Pegasus, and Mason Bay.</h4>
+                <h4>Package includes:<br>1.Flight expense<br>2.Food<br>3.Trek<br>4.Stay<br>
+                No.of.days : 9</h4><br>
+                </p>
+                <h3>Rs. 125000</h3>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

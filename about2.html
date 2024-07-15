@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        .navbar {
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #999;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #999;
+            border-radius: 50px;
+            width: 50%;
+            position: relative;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar li {
+            float: left;
+            margin-right: 20px;
+            background-color: #999;
+        }
+        .navbar .menuitems{
+            background-color: #999;
+        }
+        .navbar a {
+            text-decoration: none;
+            background-color: #999;
+            color: #000;
+            display: block;
+            padding: 10px 15px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+        .navbar a:hover {
+            background-color: #f0d3d3b6;
+            font-size: larger;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            background-color: #000;
+        }
+        body{
+            width: 100%;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+        }
+        .container{
+            width: 90%;
+            height: 100%;
+            max-width: 1170px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            grid-gap: 60px;
+            padding: 35px 0;
+        }
+        .contentLeft,
+        .contentRight{
+            width: 100%;
+        }
+        .contentLeft .row{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+        }
+        .contentLeft .row .imgWrapper{
+            width: 100%;
+            height: 450px;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.15);
+        }
+        .contentLeft .row .imgWrapper img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            user-select: none;
+            transition: 0.3s ease;
+        }
+        .contentLeft .row .imgWrapper:hover img{
+            transform: scale(1.5);
+        }
+        .contentLeft .row .imgWrapper:nth-child(odd){
+            transform: translateY(-20px);
+        }
+        .contentLeft .row .imgWrapper:nth-child(even){
+            transform: translateY(20px);
+        }
+        .contentRight .content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        .contentRight .content h4{
+            font-size: 22px;
+            font-weight: 400;
+            color: #d35400;
+        }
+        .contentRight .content h2{
+            font-size: 40px;
+            color: #999;
+        }
+        .contentRight .content p{
+            font-size: 16px;
+            color: #998;
+            line-height: 28px;
+            padding-bottom: 10px;
+        }
+        .contentRight .content a{
+            display: inline-block;
+            text-decoration: none;
+            font-size: 16px;
+            letter-spacing: 1px;
+            padding: 13px 30px;
+            color: #fff;
+            background: #d35400;
+            border-radius: 8px;
+            user-select: none;
+        }
+        @media(max-width: 768px){
+            .container{
+                grid-template-columns: 1fr;
+            }
+            .contentLeft .row{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .contentLeft .row .imgWrapper{
+                height: 150px;
+            }
+            .contentRight .content h4{
+                font-size: 18px;
+            }
+            .contentRight .content h2{
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="menuitems">
+            <li><a href="Mainpage.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="about2.html">About Us</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="contentLeft">
+          <div class="row">
+              <div class="imgWrapper">
+                  <img src="https://images.unsplash.com/photo-1617284101128-4b2025d00c55?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              </div>
+              <div class="imgWrapper">
+                  <img src="https://images.unsplash.com/photo-1632655750834-0a4f04a27033?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              </div>
+              <div class="imgWrapper">
+                  <img src="https://plus.unsplash.com/premium_photo-1677002240252-af3f88114efc?q=80&w=2025&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              </div>
+              <div class="imgWrapper">
+                  <img src="https://images.unsplash.com/photo-1587325474165-d49e05df3a76?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              </div>
+          </div>
+        </div>
+        <div class="contentRight">
+          <div class="content">
+            <h4>Welcome To</h4>
+            <h2>TREK</h2>
+            <p>Welcome to Trek, your premier destination for booking unforgettable trekking adventures. We are passionate about connecting avid trekkers with some of the world's most stunning and challenging trails. Whether you are a seasoned hiker or a beginner, our expertly curated treks cater to all skill levels, ensuring a safe and exhilarating experience. Our knowledgeable guides are dedicated to providing personalized service, enhancing your journey with local insights and expertise. At Trek, we believe in creating memories that last a lifetime. Embark on your next adventure with us and discover the beauty and thrill of nature like never before.</p>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
